@@ -1,9 +1,8 @@
-import Directory from './components/category-item/directory/directory.component';
-
-
-
-const App = () => {
-  const categories = 
+import React from 'react'
+import CategoryItem from '../category-item.component'
+import './directory.styles.scss';
+const Directory = () => {
+    const categories = 
     [
       {
         "id": 1,
@@ -31,10 +30,13 @@ const App = () => {
         "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
       }
     ];
-
   return (
-    <Directory categories={categories} />
-  );
-};
+    <div className='categories-container'>
+    {categories.map((category) => (
+      <CategoryItem key={category.id} category={category} />
+    ))}
+  </div>
+  )
+}
 
-export default App;
+export default Directory
