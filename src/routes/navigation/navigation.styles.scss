@@ -1,6 +1,4 @@
-
-  .navigation {
-  
+.navigation {
   height: 70px;
   width: 100%;
   display: flex;
@@ -14,20 +12,15 @@
   }
 
   .nav-links-container {
-   
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 37px;
 
     .nav-link {
-     
-      padding: 10px 15px ;
+      padding: 10px 15px;
       cursor: pointer;
     }
-
   }
- 
 }
